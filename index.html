@@ -1,0 +1,69 @@
+<html>
+
+<head>
+    <title>Vale</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="borda">
+        
+        <div class="titulo">
+            <h1>Vale</h1>
+        </div>
+        
+        <div id="vale">
+            <div id="numero-vale">
+                <h3>Número:</h3>
+                <input type="text" id="numero" value="011">
+                <br>
+                <p>Número do vale</p> 
+            </div>
+
+            <div id="valor">
+                <h3>Valor:</h3>
+                <input type="text" id="valor" value="00,00">
+                <br>
+                <p>Valor do vale</p> 
+            </div>
+            <br>
+            <div class="clear"></div>
+            <div id="nome">
+                <h3>Nome:</h3>
+                <input type="text" id="nome" value="Ex: Maria José">
+            </div>
+            <div id="cidade">
+                <h3>Cidade:</h3>
+                <input type="text" id="cidade">
+            </div>
+            
+            <div id="data">
+                <h3>Data:</h3>
+                <input type="date" id="data">
+            </div>
+            <div class="clear"></div>
+            <br>
+            <div id="dados-empresa">
+                <h3>Dados da Empresa:</h3>
+                <input type="text" id="dadosEmpresa" value="Ex: Nome da Empresa, CNPJ, Endereço...">
+            </div>
+
+            <div id="duas-vias">
+                <h3>Duas vias?</h3>
+                <input type="checkbox" id="segundaVia" name="segundaVia" value="segundaVia">
+                <label for="segundaVia"> Sim</label><br><br>
+            </div>
+            
+            <div id="gerar">
+                <input type="button" value="Gerar Vale" onclick="gerar()">
+            </div>
+            
+        </div>
+    </div>
+    
+</body>
+
+</html>
