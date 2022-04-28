@@ -280,28 +280,232 @@ body{
     }
   }
 
-  @media (max-width: 1070px){
+  @media (max-width: 1050px){
 	.automatico{
-		width:940px;
+		width:900px;
 	}
+    #borda {
+        width: 800px;
+    }
+
+    #nome input {
+        width: 790px;
+    }
+    
+    #data input {
+        width: 335px;
+    }
+    
+    #dados-empresa input {
+        width: 790px;
+    }
+
+    #print input {
+        left: 700px;
+    }
+
+    #recibo {
+        width: 800px;
+    
+    }
+    
+    #recibo2 {
+        width: 800px;
+    }
 }
 @media (max-width: 960px){
 	.automatico{
 		width:720px;
 	}
+    #borda {
+        width: 650px;
+    }
+
+    #nome input {
+        width: 630px;
+    }
+    
+    #cidade input {
+        width: 358px;
+    }
+
+    #data {
+        margin-left: 20px;
+    }
+    
+    #data input {
+        width: 250px;
+    }
+    
+    #dados-empresa input {
+        width: 630px;
+    }
+
+    #print input {
+        left: 600px;
+    }
+    
+    #recibo {
+        width: 650px;
+    }
+    
+    #recibo2 {
+        width: 650px;
+    }
 }
 @media (max-width: 760px){
 	.automatico{
 		width:540px;
 	}
+    #borda {
+        width: 450px;
+    }
+    
+    #nome input {
+        width: 430px;
+    }
+    
+    #cidade input {
+        width: 258px;
+    }
+    
+    #data {
+        margin-left: 20px;
+    }
+    
+    #data input {
+        width: 150px;
+    }
+    
+    #dados-empresa input {
+        width: 430px;
+    }
+
+    #print input {
+        left: 400px;
+    }
+    
+    #recibo {
+        width: 450px;
+    }
+    
+    #recibo2 {
+        width: 450px;
+    }
 }
 @media (max-width: 560px){
 	.automatico{
 		width:340px;
 	}
+    #borda {
+        width: 300px;
+    }
+    #numero-vale input {
+        width: 102px;
+    }
+
+    #valor input {
+        width: 142px;
+    }
+    #nome input {
+        width: 280px;
+    }
+    
+    #cidade input {
+        width: 280px;
+    }
+    
+    #data {
+        margin-left: 0px;
+    }
+    
+    #data input {
+        width: 280px;
+    }
+    
+    #dados-empresa input {
+        width: 280px;
+    }
+
+    #print input {
+        left: 250px;
+    }
+    
+    #recibo {
+        width: 300px;
+    }
+    
+    #recibo2 {
+        width: 300px;
+    }
+
+    .assinatura {
+        width: 200px;
+    }
+
 }
-@media (max-width: 360px){
+@media (max-width: 470px){
 	.automatico{
-		width:240px;
+		width:400px;
 	}
+    #borda {
+        width: 240px;
+    }
+    #valor{
+        margin-left: 0px;
+    }
+    
+    #nome input {
+        width: 230px;
+    }
+    
+    #cidade input {
+        width: 230px;
+    }
+    
+    #data input {
+        width: 230px;
+    }
+    
+    #dados-empresa input {
+        width: 230px;
+    }
+
+    #print input {
+        left: 150px;
+    }
+    
+    #recibo {
+        width: 240px;
+        font-size: 10px;
+    }
+    
+    #recibo2 {
+        width: 240px;
+        font-size: 10px;
+    }
+    .num-vale p, #val{
+        font-size: 10px;
+    }
+    
+    .assinatura {
+        width: 150px;
+    }
+
+    .num-vale {
+        right: 100px;
+        top: -15px;
+    }
+
+    #num {
+        top: -13px;
+        left: 20px;
+    }
+
+    .num-vale b {
+        left: 45px;
+        top: -28px;
+        padding: 4px 10px;
+    }
+
 }
