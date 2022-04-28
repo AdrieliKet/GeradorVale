@@ -2,7 +2,41 @@
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    color: #4a4a4a;
 }
+body{
+    overflow-x: hidden;
+}
+#menu{
+	background-color: #3273dc;
+	height: 20px;
+	padding: 20px 0px;
+	padding-bottom:20px;
+	font-size: 18px;
+	font-weight:bold;
+	border-width: 2px;
+}
+
+#menu h3{
+    color: #fff;
+    font-size: 30px;
+    position: relative;
+    top: -20px;
+    left: 20px;
+}
+
+.navegacao{
+	width: 1140px;
+	height: 81.421px;
+	margin: 10px auto;
+}
+
+.automatico{
+	margin:0 auto;
+    width:1140px;
+	height: 100%;
+}
+
 #borda{
     border: 1px solid #111;
     margin: 25px;
@@ -107,4 +141,167 @@
     background-color: #3273dc;
     border-radius: 4px;
     color: #fff;
+}
+
+#gerar i{
+    font-size: 30px;
+    color: #fff;
+}
+#print{
+    display: none;
+}
+
+#print input{
+    width: 130px;
+    height: 30px;
+    font-size: 20px;
+    background-color: #3273dc;
+    border-radius: 4px;
+    color: #fff;
+    position: relative;
+    left: 800px;
+}
+#recibo{
+    border: 1px solid #111;
+    margin: 25px;
+    padding: 25px;
+    width: 888px;
+    display: none;
+    
+}
+
+#recibo2{
+    border: 1px solid #111;
+    margin: 25px;
+    padding: 25px;
+    width: 888px;
+    display: none;
+}
+
+.t-vale{
+    background-color: #f3f2f2;
+    padding: 10px;
+}
+#num{
+    position: relative;
+    top: -20px;
+    left: 20px;
+}
+#val{
+    position: relative;
+    top: -20px;
+    left: 30px;
+}
+
+#num2{
+    position: relative;
+    top: -20px;
+    left: 20px;
+}
+#val2{
+    position: relative;
+    top: -20px;
+    left: 30px;
+}
+
+.num-vale{
+    float: right;
+    position: relative;
+    right: 150px;
+    top: -25px;
+}
+
+.num-vale b{
+    position: relative;
+    left: 85px;
+    top: -40px;
+    padding: 4px 10px;
+}
+
+.num-vale p{
+    font-size: 18px;
+}
+
+.dados{
+    margin-left: 30px;
+}
+#nom{
+    position: relative;
+    top: -19px;
+    left: 55px;
+}
+
+#valo{
+    position: relative;
+    top: -19px;
+    left: 80px;
+}
+
+#cid-data{
+    position: relative;
+    top: -19px;
+    left: 100px;
+}
+
+#nom2{
+    position: relative;
+    top: -19px;
+    left: 55px;
+}
+
+#valo2{
+    position: relative;
+    top: -19px;
+    left: 80px;
+}
+
+#cid-data2{
+    position: relative;
+    top: -19px;
+    left: 100px;
+}
+
+.assinatura{
+    border-top: 1px solid #333;
+    width: 300px;
+    text-align: center;
+    margin: 25px auto;
+    padding: 12px;
+}
+
+.dados-empresa{
+    text-align: right;
+    font-size: 12px;
+}
+
+@media print {
+    .noPrint{
+      display:none;
+    }
+  }
+
+  @media (max-width: 1070px){
+	.automatico{
+		width:940px;
+	}
+}
+@media (max-width: 960px){
+	.automatico{
+		width:720px;
+	}
+}
+@media (max-width: 760px){
+	.automatico{
+		width:540px;
+	}
+}
+@media (max-width: 560px){
+	.automatico{
+		width:340px;
+	}
+}
+@media (max-width: 360px){
+	.automatico{
+		width:240px;
+	}
 }

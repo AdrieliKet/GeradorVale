@@ -6,10 +6,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    
 </head>
 
 <body>
-    <div id="borda">
+    <div id="menu"> 
+        <div class="navegacao">
+            <h3>Recibos</h3>
+        </div> 
+    </div> 
+    <div class="automatico">
+    <div id="borda" class="noPrint">
         
         <div class="titulo">
             <h1>Vale</h1>
@@ -18,14 +25,14 @@
         <div id="vale">
             <div id="numero-vale">
                 <h3>Número:</h3>
-                <input type="text" id="numero" value="011">
+                <input type="text" id="numero" value="011" required>
                 <br>
                 <p>Número do vale</p> 
             </div>
 
             <div id="valor">
                 <h3>Valor:</h3>
-                <input type="text" id="valor" value="00,00">
+                <input type="text" id="valorI" value="00.00" required>
                 <br>
                 <p>Valor do vale</p> 
             </div>
@@ -33,27 +40,27 @@
             <div class="clear"></div>
             <div id="nome">
                 <h3>Nome:</h3>
-                <input type="text" id="nome" value="Ex: Maria José">
+                <input type="text" id="nomeI" value="Maria José" required>
             </div>
             <div id="cidade">
                 <h3>Cidade:</h3>
-                <input type="text" id="cidade">
+                <input type="text" id="cidadeI" required>
             </div>
             
             <div id="data">
                 <h3>Data:</h3>
-                <input type="date" id="data">
+                <input type="date" id="dataI" required>
             </div>
             <div class="clear"></div>
             <br>
             <div id="dados-empresa">
                 <h3>Dados da Empresa:</h3>
-                <input type="text" id="dadosEmpresa" value="Ex: Nome da Empresa, CNPJ, Endereço...">
+                <input type="text" id="dadosEmpresa" value="Ex: Nome da Empresa, CNPJ, Endereço..." required>
             </div>
 
             <div id="duas-vias">
                 <h3>Duas vias?</h3>
-                <input type="checkbox" id="segundaVia" name="segundaVia" value="segundaVia">
+                <input type="checkbox" id="segundaVia" name="segundaVia">
                 <label for="segundaVia"> Sim</label><br><br>
             </div>
             
@@ -63,7 +70,115 @@
             
         </div>
     </div>
+
+    <div id="print">
+        <input type="button" id="imprimir" value="Imprimir" onClick="window.print()" class="noPrint" />
+    </div>
+
+    <div id="recibo">
+        <div class="t-vale">
+            <h2>VALE</h2>
+            <div class="num-vale">
+                <p>N° <div id="num"></div></p>
+                <b>R$ <p id="val"></p></b>
+            </div>
+        </div>
+        <br>
+        <div class="dados">
+            <b>NOME:</b> <p id="nom"></p>
+            <b>VALOR:</b> R$: <p id="valo"></p> 
+            <b>LOCAL/DATA:</b> <p id="cid-data"></p></p><br>
+        </div>
+        <div class="assinatura">
+            <p>Assinatura</p>
+        </div>
+        1° via empresa
+        <div class="dados-empresa">
+            <p id="dadosEmp"></p>
+        </div>
+        
+    </div>
+
+    <div id="recibo2">
+        <div class="t-vale">
+            <h2>VALE</h2>
+            <div class="num-vale">
+                <p>N° <div id="num2"></div></p>
+                <b>R$ <p id="val2"></p></b>
+            </div>
+        </div>
+        <br>
+        <div class="dados">
+            <b>NOME:</b> <p id="nom2"></p>
+            <b>VALOR:</b> R$: <p id="valo2"></p> 
+            <b>LOCAL/DATA:</b> <p id="cid-data2"></p></p><br>
+        </div>
+        <div class="assinatura">
+            <p>Assinatura</p>
+        </div>
+        2° via cliente
+        <div class="dados-empresa">
+            <p id="dadosEmp2"></p>
+        </div>
+        
+    </div>
+</div>
+    <script>
+        function gerar(){
+            var campoNumero = document.getElementById("numero");
+            var campoValor = document.getElementById("valorI");
+            var campoNome = document.getElementById("nomeI");
+            var campoCidade = document.getElementById("cidadeI");
+            var campoData = document.getElementById("dataI");
+            var campoDadosEmp = document.getElementById("dadosEmpresa");
+            
     
+            var numero= parseInt(campoNumero.value);
+            var valor= parseFloat(campoValor.value);
+            var nome= campoNome.value;
+            var cidade= campoCidade.value;
+            var data= campoData.value;
+            var dadosEmpresa= campoDadosEmp.value;
+
+            document.getElementById("num").innerHTML = numero;
+            document.getElementById("val").innerHTML = valor;
+            document.getElementById("nom").innerHTML = nome;
+            document.getElementById("cid-data").innerHTML = cidade +", " + data;
+            document.getElementById("dadosEmp").innerHTML = dadosEmpresa;
+            document.getElementById("valo").innerHTML = valor;
+
+            document.getElementById("num2").innerHTML = numero;
+            document.getElementById("val2").innerHTML = valor;
+            document.getElementById("nom2").innerHTML = nome;
+            document.getElementById("cid-data2").innerHTML = cidade +", " + data;
+            document.getElementById("dadosEmp2").innerHTML = dadosEmpresa;
+            document.getElementById("valo2").innerHTML = valor;
+
+            var gerarVia = document.getElementById("recibo").style.display;
+            if(gerarVia=="none"){
+                document.getElementById("recibo").style.display ="block";
+            } else{
+                document.getElementById("recibo").style.display ="none";
+            }
+
+            var print = document.getElementById("print").style.display;
+            if(print=="none"){
+                document.getElementById("print").style.display ="block";
+            } else{
+                document.getElementById("print").style.display ="none";
+            }
+           
+            var checkBox = document.getElementById("segundaVia");
+            var recibo2 = document.getElementById("recibo2");
+            if (checkBox.checked == true){
+                recibo2.style.display = "block";
+            } else {
+                recibo2.style.display = "none";
+            }
+        
+    }
+
+    </script>
 </body>
 
 </html>
