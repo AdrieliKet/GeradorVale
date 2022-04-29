@@ -161,7 +161,7 @@ body{
     position: relative;
     left: 800px;
 }
-#recibo, #recibo2{
+#recibo{
     border: 1px solid #111;
     margin: 25px;
     padding: 25px;
@@ -170,16 +170,35 @@ body{
     
 }
 
+#recibo2{
+    border: 1px solid #111;
+    margin: 25px;
+    padding: 25px;
+    width: 888px;
+    display: none;
+}
+
 .t-vale{
     background-color: #f3f2f2;
     padding: 10px;
 }
-#num, #num2{
+#num{
     position: relative;
     top: -20px;
     left: 20px;
 }
-#val, #val2{
+#val{
+    position: relative;
+    top: -20px;
+    left: 30px;
+}
+
+#num2{
+    position: relative;
+    top: -20px;
+    left: 20px;
+}
+#val2{
     position: relative;
     top: -20px;
     left: 30px;
@@ -206,19 +225,37 @@ body{
 .dados{
     margin-left: 30px;
 }
-#nom, #nom2{
+#nom{
     position: relative;
     top: -19px;
     left: 55px;
 }
 
-#valo, #valo2{
+#valo{
     position: relative;
     top: -19px;
     left: 80px;
 }
 
-#cid-data, #cid-data2{
+#cid-data{
+    position: relative;
+    top: -19px;
+    left: 100px;
+}
+
+#nom2{
+    position: relative;
+    top: -19px;
+    left: 55px;
+}
+
+#valo2{
+    position: relative;
+    top: -19px;
+    left: 80px;
+}
+
+#cid-data2{
     position: relative;
     top: -19px;
     left: 100px;
@@ -237,29 +274,9 @@ body{
     font-size: 12px;
 }
 
-.errorInput {
-    border: 1px solid rgb(243, 6, 6) !important;
-}
-
 @media print {
-    body * {
-      visibility: hidden;
-    }
-    .printable, .printable * {
-      visibility: visible;
-    }
-    .printable {
-      position: fixed;
-      left: 0;
-      top: 0;
-    }
-    .confiPrint{
-        border: 1px solid #111;
-        margin: 25px;
-        padding: 25px;
-        width: 888px;
-        display: none;
-        
+    .noPrint{
+      display:none;
     }
   }
 
@@ -287,9 +304,13 @@ body{
         left: 700px;
     }
 
-    #recibo, #recibo2 {
+    #recibo {
         width: 800px;
     
+    }
+    
+    #recibo2 {
+        width: 800px;
     }
 }
 @media (max-width: 960px){
@@ -324,7 +345,7 @@ body{
         left: 600px;
     }
     
-    #recibo, #recibo2 {
+    #recibo {
         width: 650px;
     }
     
@@ -364,7 +385,11 @@ body{
         left: 400px;
     }
     
-    #recibo, #recibo2 {
+    #recibo {
+        width: 450px;
+    }
+    
+    #recibo2 {
         width: 450px;
     }
 }
@@ -410,7 +435,7 @@ body{
         width: 300px;
     }
     
-    #recibo2, #recibo2 {
+    #recibo2 {
         width: 300px;
     }
 
@@ -459,7 +484,7 @@ body{
         width: 240px;
         font-size: 10px;
     }
-    .num-vale p, #val, #val2{
+    .num-vale p, #val{
         font-size: 10px;
     }
     
@@ -472,38 +497,15 @@ body{
         top: -15px;
     }
 
-    #num, #num2 {
-        top: -12px;
-        left: 18px;
+    #num {
+        top: -13px;
+        left: 20px;
     }
 
     .num-vale b {
         left: 45px;
-        top: -24px;
+        top: -28px;
         padding: 4px 10px;
-    }
-
-    #val, #val2{
-        top: -12px;
-        left: 30px;
-    }
-
-    #nom, #nom2{
-        top: -12px;
-        left: 35px;
-    }
-
-    #valo, #valo2 {
-        top: -12px;
-        left: 50px;
-    }
-    #cid-data, #cid-data2 {
-        top: -12px;
-        left: 70px;
-    }
-
-    .dados-empresa {
-        font-size: 8px;
     }
 
 }
