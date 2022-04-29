@@ -286,13 +286,6 @@ body{
     #print input {
         left: 700px;
     }
-
-<<<<<<< HEAD
-    #recibo, #recibo2 {
-        width: 800px;
-    
-    }
-=======
     #recibo {
         width: 800px;
     
@@ -301,7 +294,6 @@ body{
     #recibo2 {
         width: 800px;
     }
->>>>>>> 2c2848e065004122153eb04ffeafcb661e504065
 }
 @media (max-width: 960px){
 	.automatico{
@@ -334,19 +326,14 @@ body{
     #print input {
         left: 600px;
     }
-    
-<<<<<<< HEAD
-    #recibo, #recibo2 {
-=======
+
     #recibo {
->>>>>>> 2c2848e065004122153eb04ffeafcb661e504065
         width: 650px;
     }
     
     #recibo2 {
         width: 650px;
     }
-}
 @media (max-width: 760px){
 	.automatico{
 		width:540px;
@@ -378,16 +365,11 @@ body{
     #print input {
         left: 400px;
     }
-    
-<<<<<<< HEAD
-    #recibo, #recibo2 {
-=======
     #recibo {
         width: 450px;
     }
     
     #recibo2 {
->>>>>>> 2c2848e065004122153eb04ffeafcb661e504065
         width: 450px;
     }
 }
@@ -433,11 +415,7 @@ body{
         width: 300px;
     }
     
-<<<<<<< HEAD
     #recibo2, #recibo2 {
-=======
-    #recibo2 {
->>>>>>> 2c2848e065004122153eb04ffeafcb661e504065
         width: 300px;
     }
 
@@ -486,11 +464,8 @@ body{
         width: 240px;
         font-size: 10px;
     }
-<<<<<<< HEAD
     .num-vale p, #val, #val2{
-=======
-    .num-vale p, #val{
->>>>>>> 2c2848e065004122153eb04ffeafcb661e504065
+
         font-size: 10px;
     }
     
@@ -503,20 +478,12 @@ body{
         top: -15px;
     }
 
-<<<<<<< HEAD
     #num, #num2 {
         top: -12px;
         left: 18px;
-=======
-    #num {
-        top: -13px;
-        left: 20px;
->>>>>>> 2c2848e065004122153eb04ffeafcb661e504065
     }
-
     .num-vale b {
         left: 45px;
-<<<<<<< HEAD
         top: -24px;
         padding: 4px 10px;
     }
@@ -544,10 +511,4 @@ body{
         font-size: 8px;
     }
 
-=======
-        top: -28px;
-        padding: 4px 10px;
-    }
-
->>>>>>> 2c2848e065004122153eb04ffeafcb661e504065
 }
