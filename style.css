@@ -334,6 +334,7 @@ body{
     #recibo2 {
         width: 650px;
     }
+}
 @media (max-width: 760px){
 	.automatico{
 		width:540px;
